@@ -102,8 +102,25 @@ public class GridPanel extends JPanel
 				if ( (NearbyMines[x][y] != 0) && colorArray[x][y] != Color.BLACK) 
 				 {
 					int counter = NearbyMines[x][y];
-					g.setColor(Color.RED);
-					g.drawString(String.valueOf(counter), x1 + GRID_X + (x * (INNER_CELL_SIZE + 1)) + 10, y1 + GRID_Y + (y * (INNER_CELL_SIZE + 1)) + 20);
+					
+					if (counter == 1)
+					 {
+						g.setColor(Color.GREEN);
+					 }
+					
+					else if (counter == 2)
+					  {
+						g.setColor(Color.BLUE);
+						
+					}
+					else if (counter == 3)
+					{
+						g.setColor(Color.RED);
+					}
+					
+					else g.setColor(Color.ORANGE);
+					
+					g.drawString(String.valueOf(counter), x1 + GRID_X + (x * (INNER_CELL_SIZE + 1)) + 18, y1 + GRID_Y + (y * (INNER_CELL_SIZE + 1)) + 25);
 				 }
 			 }
 		 }

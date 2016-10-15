@@ -197,10 +197,10 @@ public class MyMouseAdapter extends MouseAdapter
 					 }
 				 }
 
-			    if(my_Panel.colorArray[grid_X][grid_Y].equals(Color.BLACK) || my_Panel.colorArray[grid_X][grid_Y].equals(Color.GRAY))
-				 {
+					else if(my_Panel.colorArray[grid_X][grid_Y].equals(Color.BLACK) || my_Panel.colorArray[grid_X][grid_Y].equals(Color.GRAY))
+				     {
 					// Do nothing.
-				 }
+				     }
 
 			    else 
 				 {
